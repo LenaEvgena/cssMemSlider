@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: rgba(241, 178, 120, 0.699);
+}
+
+:root {
+  font-size: 10px;
+}
