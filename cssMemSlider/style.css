@@ -134,3 +134,39 @@ body {
 #s4:checked ~ .slider_description .textsl {
   margin-left: -240%;
 }
+
+@media screen and (max-width: 800px) {
+  :root {
+    font-size: 8px;
+  }
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "s"
+    "n"
+    "d";
+    width: 70%;
+    min-width: 40rem;
+    row-gap: 1.5rem;
+  }
+  .slider_nav {
+    justify-self: center;
+  }
+  .slider_description {
+    width: 35rem;
+  }
+  .text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .wrapper {
+    width: 60%;
+    min-width: 35rem;
+    row-gap: 2rem;
+  }
+  .slider_description {
+    width: 35rem;
+  }
+}
