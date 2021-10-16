@@ -89,7 +89,9 @@ body {
 }
 
 .pointer:active .point_inner {
-  filter: drop-shadow(0.3rem 0.3rem 0.4rem rgb(209, 61, 2));
+  filter: drop-shadow(0.3rem 0.3rem 0.4rem rgb(226, 25, 25));
+	background-color: rgb(209, 61, 2);
+  border: 0.35rem solid rgb(209, 61, 2);
 }
 
 #s1:checked ~ .slider_nav label:nth-child(1) > .point_inner,
