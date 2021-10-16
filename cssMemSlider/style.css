@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
 }
 
 body {
@@ -46,6 +45,7 @@ body {
   width: 100%;
   height: auto;
   border-radius: 1rem;
+  user-select: none;
 }
 
 .slide {
@@ -60,6 +60,7 @@ body {
   width: 16rem;
   justify-content: space-between;
   z-index: 2;
+  user-select: none;
 }
 
 .point_inner {
@@ -69,7 +70,6 @@ body {
   border-radius: 50%;
   background-color: rgb(241, 104, 50);
   border: 0.35rem solid rgb(241, 104, 50);
-  /* cursor: pointer; */
   transition: all 0.4s ease;
 }
 
@@ -121,7 +121,6 @@ body {
 .text_wrapper {
   width: 400%;
   display: flex;
-  /* position: relative; */
   justify-self: flex-end;
   overflow: hidden;
 }
@@ -151,7 +150,7 @@ body {
 
 @media screen and (max-width: 800px) {
   :root {
-    font-size: 8px;
+    font-size: 9px;
   }
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
