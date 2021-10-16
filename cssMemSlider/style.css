@@ -64,7 +64,7 @@ body {
 
 .pointer {
   display: inline-block;
-  position: relative;
+  /* position: relative; */
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -78,4 +78,46 @@ body {
   background-color: rgb(247, 224, 215);
   border: 0.35rem solid rgb(247, 224, 215);
   opacity: 0.8;
+}
+
+#s1:checked ~ .slider_nav label:nth-child(1),
+#s2:checked ~ .slider_nav label:nth-child(2),
+#s3:checked ~ .slider_nav label:nth-child(3),
+#s4:checked ~ .slider_nav label:nth-child(4) {
+	background-color: transparent !important;
+}
+
+#s1:checked ~ .slider .sl1 {
+  margin-left: 0;
+}
+#s2:checked ~ .slider .sl1 {
+  margin-left: -25%;
+}
+#s3:checked ~ .slider .sl1 {
+  margin-left: -50%;
+}
+#s4:checked ~ .slider .sl1 {
+  margin-left: -75%;
+}
+
+.slider_description {
+  grid-area: d;
+  width: 45rem;
+  overflow: hidden;
+}
+
+.text_wrapper {
+  width: 400%;
+  display: flex;
+  /* position: relative; */
+  justify-self: flex-end;
+  overflow: hidden;
+}
+
+.text {
+  display: block;
+  width: 80%;
+  font-size: 2.2rem;
+  transition: all 0.6s ease;
+  overflow: hidden;
 }
