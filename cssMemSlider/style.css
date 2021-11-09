@@ -21,8 +21,6 @@ body {
   width: 70%;
   max-width: 80rem;
   margin: 0 auto;
-  top: -20%;
-  transform: translateY(20%);
   row-gap: 1rem;
   overflow: hidden;
   filter: drop-shadow(0.1rem 0.25rem 0.3rem rgba(51, 50, 50, 0.6));
